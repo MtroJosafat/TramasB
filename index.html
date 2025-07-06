@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tramas Escucha a Víctimas de Violencia, A.C.</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <img src="Logo.png" alt="Logo Tramas" class="logo-central">
+    </div>
+    <nav>
+      <a href="#home" class="active" onclick="showSection('home', this)">Inicio</a>
+      <a href="#publicaciones" onclick="showSection('publicaciones', this)">Publicaciones</a>
+      <a href="#donativos" onclick="showSection('donativos', this)">Donativos</a>
+      <a href="#quienes" onclick="showSection('quienes', this)">¿Quiénes Somos?</a>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="section active">
+      <p class="bienvenida"><b>Tramas Escucha a Víctimas de Violencia, A.C.</b> acompaña, informa y apoya a personas afectadas por la violencia.</p>
+      <div class="carousel-container">
+        <div class="carousel" id="carousel"></div>
+        <div class="carousel-dots" id="carousel-dots"></div>
+      </div>
+    </section>
+    <section id="publicaciones" class="section">
+      <h2>Publicaciones</h2>
+      <div id="todas-publicaciones" class="card-list">
+        <div class="card">
+          <strong>Guía de apoyo emocional</strong>
+          <p>Recomendaciones para el autocuidado y la salud mental.</p>
+        </div>
+        <div class="card">
+          <strong>Derechos de las víctimas</strong>
+          <p>Información sobre derechos y acceso a la justicia.</p>
+        </div>
+        <div class="card">
+          <strong>Red de apoyo</strong>
+          <p>Contactos y organizaciones aliadas en tu zona.</p>
+        </div>
+        <div class="card">
+          <strong>Cómo pedir ayuda</strong>
+          <p>Pasos y recomendaciones para buscar apoyo seguro.</p>
+        </div>
+      </div>
+    </section>
+    <section id="donativos" class="section">
+      <h2>Donativos</h2>
+      <div class="donativos-card">
+        <p>Tu apoyo es fundamental para ayudar a más víctimas de violencia. Puedes donar vía transferencia:</p>
+        <div class="donativos-info">
+          <strong>Banco:</strong> [Nombre del banco]<br>
+          <strong>Cuenta:</strong> [Número de cuenta]<br>
+          <strong>CLABE:</strong> [CLABE interbancaria]<br>
+          <strong>Nombre:</strong> Tramas Escucha a Víctimas de Violencia, A.C.
+        </div>
+        <p>¡Gracias por sumarte a nuestra causa!</p>
+      </div>
+    </section>
+    <section id="quienes" class="section">
+      <h2>¿Quiénes Somos?</h2>
+      <div class="quienes-content">
+        <p><b>Tramas Escucha a Víctimas de Violencia, A.C.</b> es una asociación civil dedicada a brindar apoyo, escucha, información y acompañamiento a personas afectadas por la violencia en México. Nuestro equipo está conformado por profesionales y voluntarios comprometidos con la transformación social y el bienestar de las víctimas.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Tramas Escucha a Víctimas de Violencia, A.C. | contacto@tramas.org</p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
