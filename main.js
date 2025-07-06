@@ -74,8 +74,25 @@ function carouselInit() {
   window.carouselInit = carouselInit;
 }
 
+function addPublication() {
+    const title = prompt("Título de la publicación:");
+    const description = prompt("Descripción de la publicación:");
+
+    if (title && description) {
+        const cardList = document.getElementById("todas-publicaciones");
+        const card = document.createElement("div");
+        card.className = "card";
+        card.innerHTML = `<strong>${title}</strong><p>${description}</p>`;
+        cardList.appendChild(card);
+        carouselInit(); // Reinitialize carousel after adding a publication
+    }
+}
+
 window.onload = () => {
   const firstNav = document.querySelector('header nav a');
   showSection('home', firstNav);
   carouselInit();
+  // Initialize carousel on page load
+  const addPublicationButton = document.getElementById("add-publication");
+  addPublicationButton.addEventListener("click", addPublication);
 };
