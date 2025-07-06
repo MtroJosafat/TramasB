@@ -33,7 +33,7 @@ header {
   display: block;
   margin: 0 auto;
   height: auto;
-  max-width: 250px;
+  max-width: 350px; /* Increased max-width */
   width: 80%;
   border-radius: 12px;
   box-shadow: none;
