@@ -32,8 +32,8 @@ header {
 .logo-central {
   display: block;
   margin: 0 auto;
-  height: 96px;
-  max-width: 210px;
+  height: 90px;
+  max-width: 180px;
   width: auto;
   border-radius: 12px;
   box-shadow: none;
